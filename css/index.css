@@ -2070,6 +2070,16 @@ figure.highlight pre .javascript .function {
     width: 100% !important;
   }
 }
+@media screen and (min-width: 900px) {
+  .layout > div:first-child {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -o-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
 .layout.hide-aside {
   max-width: 1000px;
 }
@@ -2345,7 +2355,7 @@ figure.highlight pre .javascript .function {
   margin: 0;
 }
 #recent-posts .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-label {
-  padding-right: 4px;
+  display: none;
 }
 #recent-posts .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-separator {
   margin: 0 6px;
@@ -2515,7 +2525,7 @@ figure.highlight pre .javascript .function {
 }
 @media screen and (min-width: 900px) {
   #aside-content {
-    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -2901,6 +2911,9 @@ figure.highlight pre .javascript .function {
   -ms-animation: more-btn-move 1s infinite;
   animation: more-btn-move 1s infinite;
 }
+#aside-content .card-announcement {
+  height: 60%;
+}
 #aside-content .card-announcement .item-headline i {
   color: #f00;
 }
@@ -2914,11 +2927,6 @@ figure.highlight pre .javascript .function {
 .avatar-img img {
   width: 100%;
   height: 100%;
-  -webkit-transition: filter 375ms ease-in 0.2s, -webkit-transform 0.3s;
-  -moz-transition: filter 375ms ease-in 0.2s, -moz-transform 0.3s;
-  -o-transition: filter 375ms ease-in 0.2s, -o-transform 0.3s;
-  -ms-transition: filter 375ms ease-in 0.2s, -ms-transform 0.3s;
-  transition: filter 375ms ease-in 0.2s, transform 0.3s;
   object-fit: cover;
 }
 .avatar-img img:hover {
@@ -2929,7 +2937,7 @@ figure.highlight pre .javascript .function {
   transform: rotate(360deg);
 }
 .site-data {
-  display: table;
+  display: none;
   width: 100%;
   table-layout: fixed;
 }
@@ -3271,6 +3279,7 @@ figure.highlight pre .javascript .function {
   background-size: cover;
 }
 #footer-wrap {
+  display: none;
   position: relative;
   padding: 40px 20px;
   color: var(--light-grey);
@@ -3793,6 +3802,9 @@ figure.highlight pre .javascript .function {
 #pagination .pagination {
   margin-top: 20px;
   text-align: center;
+}
+#pagination .page-number {
+  display: none;
 }
 #pagination .page-number.current {
   background: #00c4b6;
